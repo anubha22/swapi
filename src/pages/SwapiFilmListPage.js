@@ -14,6 +14,17 @@ export const SwapiFilmListPage = () => {
         fetchFilm();
     }, [])
 
+    // useEffect(() => {
+    //     fetch('https://swapi.dev/api/films/')
+    //     .then(res => res.json())
+    //     .then(
+    //         (result) => {
+    //             setFilm(result)
+    //             console.log(result)
+    //         }
+    //     )
+    // },[])
+
     return(
         <>
             <h1>List of Films</h1>
