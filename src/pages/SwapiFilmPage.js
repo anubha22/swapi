@@ -8,7 +8,7 @@ export const SwapiFilmPage = ({films, error, isLoaded}) => {
     } else {
         return (
             films.map(film => 
-                <div>
+                <div key={film.title}>
                     <h3> Title: {film.title} </h3>
                     <p> Director: {film.director} </p>
                     <p> Release date: {film.release_date}</p>
@@ -18,13 +18,3 @@ export const SwapiFilmPage = ({films, error, isLoaded}) => {
     }
 }
 
-// export const SwapiFilmPage = ({films}) => (
-//     films.map(film => 
-//         <div>
-//             <h3> Title: {film.title} </h3>
-//             <p> Director: {film.director} </p>
-//             <p> Release date: {film.release_date}</p>
-//         </div>
-//     )
-// )
-    
